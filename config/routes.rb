@@ -1,4 +1,8 @@
 NewProject::Application.routes.draw do
+  resources :machines
+
+  resources :users
+
   get "users/new"
 
   get "pages/home"

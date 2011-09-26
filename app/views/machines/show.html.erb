@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Machine:</b>
+  <%= @machine.machine %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @machine.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_machine_path(@machine) %> |
+<%= link_to 'Back', machines_path %>
+&#160;&#160;&#160; <%= link_to 'Take me Home !', root_path %>

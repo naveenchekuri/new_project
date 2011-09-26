@@ -3,7 +3,8 @@
 }
 
 body {
-  background: #cff;
+    background: url('/images/ZA101834595.JPG') repeat-x ;
+/*    background: #cff; */
 }
 
 header {

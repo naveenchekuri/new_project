@@ -1,0 +1,26 @@
+<h1>Listing machines</h1>
+
+<table>
+  <tr>
+    <th>Machine</th>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @machines.each do |machine| %>
+  <tr>
+    <td><%= machine.machine %></td>
+    <td><%= machine.name %></td>
+    <td><%= link_to 'Show', machine %></td>
+    <td><%= link_to 'Edit', edit_machine_path(machine) %></td>
+    <td><%= link_to 'Destroy', machine, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Want to reserve another machine', new_machine_path %>
+&#160;&#160;&#160; <%= link_to 'Nah, Take me Home !', root_path %>
